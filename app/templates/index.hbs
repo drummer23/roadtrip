@@ -2,12 +2,13 @@
 <!-- Begin Container -->
 
 <div class="row">
-  <div class="col-sm-6 box">some text</div>
-  <div class="col-sm-6 box">MORE TEXT</div>
-  <div class="col-sm-6 box"></div>
-  <div class="col-sm-6 box"></div>
-  <div class="col-sm-6 box"></div>
-  <div class="col-sm-6 box"></div>
+
+  {{#each model as |place|}}
+
+    <div class="col-sm-6 box">{{place-item place=place}}</div>
+
+  {{/each}}
+
 </div>
 
 <!-- End Container -->
