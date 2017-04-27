@@ -2,6 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-  return ['Grand Cannion', 'Route 66', 'Yosemite Park'];
+  return [
+    {name: 'Grand Canyon', state: 'Arizona'},
+    {name: 'Hoover Dam', state: 'Nevada'},
+    {name: 'Yosemite Park', state: 'California'}
+    ];
   }
 });
