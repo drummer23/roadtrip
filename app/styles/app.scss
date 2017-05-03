@@ -3,17 +3,17 @@
 
 @import "palette.scss";
 
+body {
+  background-color: #1F2D3D;
+}
 
 .box {
-  height: 160px;
 
   /* font-family: 'Ubuntu', sans-serif; */
   font-size: 24px;
 
   //TODO: move to var
   color: #1F2D3D;
-
-
 
   &:nth-child(5n+1) {
     background-color: $color1;
@@ -34,5 +34,25 @@
   &:nth-child(5n+5) {
     background-color: $color5;
   }
+
+}
+
+.place-item {
+
+  height: 218px;
+
+
+  .image {
+      float: left;
+
+      /*
+      width: 280px;
+      height: 178px;
+      overflow: hidden;
+      */
+
+
+  }
+
 
 }
